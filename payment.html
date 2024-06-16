@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ 
+        #main{
+            height:1220px;
+            width:100%;
+            background-color: WhiteSmoke;
+ 
+            padding:50px;
+
+        }
+        #container{
+            height:1200px;
+            width:98%;
+            background-color: white;
+            margin:auto;
+            
+  
+           
+
+        }
+        #logos{
+            display:flex;
+            height:4%;
+            width:40%;
+             
+            margin-left: 740px;
+            justify-content:space-between;
+            background-color: whitesmoke;
+        }
+       
+        #img1{
+           
+            width:200px;
+            height:50px;
+        }
+        #img2{
+            width:120px;
+            height:48px;
+
+        }
+        #img3{
+            width:110px;
+            height:48px;
+        }
+        #div1{
+   
+            height:auto;
+            width:95%;
+            margin:auto;
+        }
+        #logoimg{
+            height:100px;
+            width:300px;
+        }
+        #billinfo{
+    
+            height: 40%;
+            width:95%;
+            margin:auto;
+        }
+        #paymentinfo{
+             
+            height: 45%;
+            width:84.5%;
+            margin-left: 2.5%;
+             
+        }
+        #bill1{
+            width:70%;
+            height:30px;
+            border: 1px solid pink;
+            font-size: 22px;
+            background-image: linear-gradient(to right, rgb(10, 112, 10) , rgb(166, 247, 122));
+            border-radius: 7px;
+            padding:10px;
+            color:white;
+            font-family: 'Poppins', sans-serif;
+        }
+        #orderdetails{
+            
+            display:flex;
+        }
+        #pymnt1{
+            width:81%;
+            height:30px;
+             
+            font-size: 22px;
+             background-image: linear-gradient(to right, rgb(10, 112, 10) , rgb(166, 247, 122));
+            border-radius: 7px;
+            padding:10px;
+            color:white;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 50px;
+        }
+        #pymntmain{
+            display:flex;
+            margin-top: 15px;
+            width:1000px;
+
+        }
+        #pymntmeths{
+            font-size: 16px;
+            width:30%;
+        
+
+        }
+        #pymntmeths>div{
+            border:1px solid grey;
+            height:7%;
+            font-size: 18px;
+            width:90%; 
+            color: rgb(10, 1, 1);
+            padding-left: 9px;
+            padding-top: 10px; 
+            
+            font-family: 'Poppins', sans-serif;
+        }
+      
+
+        #submitbtn1{
+            width:25%;
+            background-image: linear-gradient(to right, rgb(10, 112, 10) , rgb(166, 247, 122));
+        
+            font-size:14px;
+            color:#fff;
+            cursor:pointer;
+             height:35px;
+        }
+        #submitbtn2{
+            width:25%;
+            background-image: linear-gradient(to right, rgb(10, 112, 10) , rgb(166, 247, 122));
+        
+            font-size:14px;
+            color:#fff;
+            cursor:pointer;
+             height:35px;
+             margin-left: 30px;
+        }
+        #submit-btn1:hover{
+            letter-spacing: 2px;
+            opacity: .8;
+        }
+
+         
+      
+       
+         #carddetails #cardcontainer #front #cardnumberbox{
+             padding:30px 0;
+             font-size: 22px;
+             color:#fff;
+
+         }
+         #billnm{
+             width:65%;
+             height:30px;
+             font-size: 20px;
+             margin-top:-70px;
+             margin-left:10px;
+         }
+         #addnm{
+             width:65%;
+             height:30px;
+             font-size: 20px;
+             margin-top:30px;
+             margin-left:10px;
+         }
+         #billflex1{
+             width:66%;
+             height:auto;
+             font-size: 20px;
+             margin-top:30px;
+             margin-left:10px;
+             
+         }
+         #bill3{
+            height:30px;
+            font-size: 20px;
+            width:45%;
+         }
+         #bill4{
+             height:30px;
+             font-size: 20px;
+             width:45%;
+             margin-left:58px; 
+         }
+         #billflex2{
+             width:66%;
+             height:auto;
+             font-size: 20px;
+             margin-top:30px;
+             margin-left:10px;
+             
+         }
+         #bill5{
+            height:30px;
+            font-size: 20px;
+            width:45%;
+         }
+         #bill6{
+             height:30px;
+             font-size: 20px;
+             width:45%;
+             margin-left:58px; 
+         }
+         #billflex3{
+             width:66%;
+             height:auto;
+             font-size: 20px;
+             margin-top:30px;
+             margin-left:10px;
+             
+         }
+         #bill7{
+            height:30px;
+            font-size: 20px;
+            width:45%;
+         }
+         #bill8{
+             height:30px;
+             font-size: 20px;
+             width:45%;
+             margin-left:58px; 
+         }
+         #notes{
+            width:65%;
+             height:30px;
+             font-size: 20px;
+             margin-top:30px;
+             margin-left:10px;
+         }
+          #cardsimg{
+              width:250px;
+            
+            
+          }
+         
+           
+        marquee{
+            width: 26%;
+        }
+       
+        hr{
+            border:1px solid grey;
+        }
+        #formid{
+            width:1300px;
+            margin-top: 45px;
+        }
+        #defaultaddress{
+            margin-top:20px;
+        }
+        @media only screen and (min-width: 400px) and (max-width: 750px) {
+               
+        #main{
+            height:1220px;
+            width:auto;
+            background-color: WhiteSmoke;
+ 
+            padding:50px;
+
+        }
+        #container{
+            height:1200px;
+            width:auto;
+            background-color: white;
+            margin:auto;
+        }
+        #billinfo{
+    
+            height: 40%;
+            width:350px;
+            margin:auto;
+        }
+        #paymentinfo{
+            
+            height: 0;
+        
+                       
+        }
+        #pymntmain{
+        width:350px;
+
+        }
+            }
+        @media only screen and (min-width: 0px) and (max-width: 400px) {
+            
+        #main{
+            height:1220px;
+            width:auto;
+            background-color: WhiteSmoke;
+ 
+            padding:50px;
+
+        }
+        #container{
+            height:1200px;
+            width:auto;
+            background-color: white;
+            margin:auto;
+
+        }
+        #billinfo{
+    
+            height: 40%;
+            width:auto;
+            margin:auto;
+        }
+        #paymentinfo{
+            
+            height: 45%;
+            width:auto;
+            margin-left: 2.5%;
+            
+        }
+        #orderdetails{
+            width:300px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="container">
+            <div id="div1">
+                <marquee behavior="slide" direction="right" loop="1">
+                <h1>Sports Way</h1>
+                </marquee>      
+                <hr>
+            </div>
+
+            <div id="billinfo">
+                <div id="bill1">
+                    Billing Information
+                </div>
+                <div id="orderdetails">
+                    
+                    <form id="form1">
+                        <div id="formid">
+                        <input id="billnm" type="text" placeholder="Billing Name">
+                        
+                        <input id="addnm" type="text" placeholder="Address">
+                        
+                        <div id="billflex1">
+                        <input id="bill3" type="text" placeholder="Zip Code">
+                        <input id="bill4" type="text" placeholder="City">
+                        </div>
+                        <div id="billflex2">
+                            <input id="bill5" type="text" placeholder="State">
+                            <input id="bill6" type="text" placeholder="Country">
+                            </div>
+                            <div id="billflex3">
+                                <input id="bill7" type="number" placeholder="Mobile Number">
+                                <input id="bill8" type="email" placeholder="Email">
+                                </div>
+                            <input id="notes" type="text" placeholder="Notes(Optional)">
+                            <div>
+                      
+                             
+                              </div>
+                    </form>
+                </div>
+                    
+                </div>
+            </div>
+
+
+
+
+
+            <div id="paymentinfo">
+                <div id="pymnt1">Payment Information</div>
+                <div id="pymntmain">
+                   
+                <form>
+                
+                <h3>
+                    <input type="checkbox"/>Cash on Delivery <br>
+                </h3>                          
+                    <input type="checkbox"/>I agree with the Privacy Policy by proceeding with this payment <br> <br>
+                        
+                    <input type="submit" value="Confirm order" id="submitbtn1" onclick="myFunction()">
+                    <input type="submit" value="Cancel" id="submitbtn2" onclick="myFunction2()">
+               </form>
+                       
+                    </div>
+
+            </div>
+            
+<hr>
+            </div>
+
+
+
+
+
+
+        </div>
+      
+    </div>
+
+
+
+
+<script>
+    var cartamount = JSON.parse(localStorage.getItem("sachindata"));
+    document.querySelector("#totalamount1").innerHTML += cartamount;
+    document.querySelector("#totalamount2").innerHTML += cartamount;
+    
+     
+    function myFunction(){
+        event.preventDefault();
+        window.location.href="paymentsuccess.html";
+    };
+    function myFunction2(){
+        event.preventDefault();
+        window.location.href="paymentfailed.html";
+    };
+ 
+  
+  
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
